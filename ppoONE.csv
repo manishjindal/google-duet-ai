@@ -1,0 +1,53 @@
+"EQUIPMENT FOR Equinix - 2323 Bryan Street, Dallas TX 75021",,,,,,,,,Green,,Database Servers for Oracle,,,
+,,,,,,,,,Blue,,"VMWare hosts for web servers, linux application hosts, Oracle database server",,,
+Equipment List,,,,,,,,,,,,,,
+host,Vendor,Model,Architecture,description,IP Address,Application,GCP Target,Move State,Memory (GB),CPU Cores,CPU Threads,CPU Utilization per 24 hours (%),CPU Utilization per Month (Hrs),Storage GB
+rmm1l1,BayTech ,DS6D,,Remote Serial Management Module,N/A,,Not migrating,,,,,,,
+rmm2l1,BayTech ,DS6D,,Remote Serial Management Module,192.168.100.131,,Not migrating,,,,,,,
+daltx09,Dell,PowerEdge 2450,,"2 Pentium III, 728Mhz, 2GB, 36GB SCSI, Windows Server 2003 Standard",192.168.100.206,,GCVE,,loaddata and edireports,,,,,
+ppobeta (removed),Gateway,E5200 ,,Webserver,192.168.100.215,,,,,,,,,
+ppobeta2,Dell,PowerEdge 2550,,"2 Pentium III, 728Mhz, 2GB, 36GB SCSI, Windows Server 2003 Standard",192.168.100.193,,GCVE,,,,,,,
+pp1log2,HP,,,HP DL380 G9 Server,,syslog and logging,,ODI,32,12,24,5%,36.00,1000
+s1,Sun,Sun Fire V240,UltraSPARC→Intel,Sun V240,192.168.100.152,Oracle DB,GCVE,Oracle 12,4,2,2,7%,50.40,128
+s2,Sun,Sun Fire V880,"UltraSPARC→Emulation
+UltraSPARC→Intel",Sun V880,192.168.100.153,"EDI Application Server, IBM MQ Client",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ,,16,4,5,56%,403.20,144
+s3,Sun,Sun Fire V880,UltraSPARC→Intel,Sun V880,192.168.100.154,Oracle DB,GCVE,Oracle 12,16,8,8,16%,115.20,144
+s5,Sun,Sun Fire V890,UltraSPARC→Intel,Sun V890,192.168.100.160,Oracle DB,GCVE,Oracle 12,16,8,16,18%,129.60,246
+s6,Sun,Sun Fire V240,UltraSPARC→Intel,Sun V240,192.168.100.167,Oracle DB,GCVE,Oracle 12,8,2,2,3%,21.60,128
+s7,Sun,Sun Fire X4200,UltraSPARC,Sun X4200,192.168.100.190,,,,,,,,0.00,
+bpcmodem1,,,,US Robotics 56K Sportster,,,Not migrating,,,,,,0.00,
+u3,HP,DL385 G2,,Linux Server,192.168.100.159,Monitoring,,ODI,18,4,4,2%,14.40,72
+u5,IBM,Xseries (32-bit),,Linux Server,192.168.100.151,,,,,,,,0.00,
+u9,IBM,Xseries (32-bit),,Linux Server,,,,,,,,,0.00,
+pp1-nas01,Infrant,ReadNAS NV,,NAS device,192.168.103.162,archive storage,GCS/NetApp,NAS,8,2,2,3%,21.60,1000
+pp1-nas03,Infrant,ReadyNAS NV,,NAS device,192.168.103.164,archive storage,GCS/NetApp,NAS,8,2,2,2%,14.40,1000
+pp1-nas05,NetGear,ReadyNAS NV,,NAS device,192.168.103.193,archive storage,GCS/NetApp,NAS,8,2,2,2%,14.40,1000
+badboy,Overland Storage,NEO 2000,,LTO-3 Tape Library,192.168.100.194,Tape Library,GCS/NetApp,,,,,,,
+daltx-vmhost1,HP,DL380 G7,Intel,Vmware ESXi Host Server (HP DL380 G8),192.168.100.200,"WebApp, Linux Servers, load balancer",GCVE,ODI,98,12,24,10%,72.00,1000
+daltx-vmhost2,HP,DL380 G8,Intel,Vmware ESXi Host Server (HP DL380 G9),,"WebApp, Linux Servers",GCVE,ODI,192,16,32,8%,57.60,3500
+daltx-vmhost3,HP,DL380 G9,Intel,Vmware ESXi Host Server (HP DL380 G9),,Oracle DB,GCVE,Oracle 12,128,16,32,8%,57.60,1750
+daltx-vmhost4,HP,DL380 G9,Intel,Vmware ESXi Host Server (HP DL380 G9),,"WebApp, Linux Servers",GCVE,ODI,128,16,32,23%,165.60,1750
+daltx-vmhost5,HP,DL380 G9,Intel,Vmware ESXi Host Server (HP DL380 G9),,Oracle DB,GCVE,Oracle 12,256,24,48,28%,201.60,6000
+daltx-vmhost6,HP,DL380 G(,Intel,Vmware ESXi Host Server (HP DL380 G9),,"Oracle DB, Linux Servers",GCVE,Oracle 12,128,20,40,,,2000
+daltx-vmhost7,HP,DL380 G9,Intel,Vmware ESXi Host Server (HP DL380 G9),,Oracle DB,GCVE,Oracle 12,256,24,48,,,7000
+t1,Oracle,T4-2,UltraSPARC→Intel,Oracle Solaris Server,192.168.100.155,Oracle DB,"GCVE (Intel), Oracle BMS",Oracle 12,128,16,128,,,3000
+na1-1,NetApp,FAS2240-2,,NetApp Clustered Storage,192.168.100.146,Storage,NFS/GCS/NetApp,NAS,12,4,8,,,27000
+na1-2,,FAS2240-2,,NetApp Clustered Storage,,Storage,NFS/GCS/NetApp,NAS,12,4,8,,,27000
+na1 - shelf 1,NetApp,DS4246,,NetApp Shelf,,Storage,NFS/GCS/NetApp,NAS,,,,,,
+dalcluster01-01,NetApp,AFF A200,,NetApp Clustered Storage - All Flash,,Storage,NFS/GCS/NetApp,NAS,32,12,24,,,10000
+dalcluster01-02,NetApp,AFF A200,,NetApp Clustered Storage - All Flash,,Storage,NFS/GCS/NetApp,NAS,32,23,24,,,10000
+pp1app5,HP,,,"NetApp OnCommand, Vmware vCenter, Veeam Backup (Win 2012R2)",192.168.100.147,,,ODI,16,4,8,5%,36.00,1000
+syn01,Synology,RS4017XS,,Synology RackStation RS4017XS+,,archive storage,,Archive Storage,32,8,16,,,100000
+clstx01-01,NetApp,AFF A250,,NetApp Clustered Storage - All Flash,,Storage,,NAS,128,12,24,,,28000
+clstx01-02,NetApp,AFF A250,,NetApp Clustered Storage - All Flash,,Storage,,NAS,128,12,24,,,28000
+cluster interconnect switch 1,NetApp,X1960-R6,,NetApp CN1610 16-Port Managed 10Gb switches,,Storage Network Internconnect,,,,,,,,
+cluster interconnect switch 1,NetApp,X1960-R6,,NetApp CN1610 16-Port Managed 10Gb switches,,Storage Network Internconnect,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,1840,269,459,,,261862
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,, , , ,,
+,,,,,,,,,,, ,,,#REF!
+,,,,,,,,,,,,,,
+,,,,,,,,,, ,,,,
